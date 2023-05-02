@@ -1,301 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <title>CSS Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="styles.css">
+        <!--==================== MAIN JS ====================-->
+    <script src="main.js"></script>
+    <title>Responsive Portfolio Website</title>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="banner">Web Programming...</div>
-  </header>
 
+        <!--==================== MENU ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link"> HOME</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link"> ABOUT</a></li>
+                    <li class="nav__item"><a href="pages/Skills_qualifications.html#skills" class="nav__link">SKILLS</a></li>
+                    <li class="nav__item"><a href="pages/Services.html#services" class="nav__link">SERVICES</a></li>
+                    <li class="nav__item"><a href="pages/Services.html#portfolio" class="nav__link">ACHIEVEMENTS</a></li>
+                    <li class="nav__item"><a href="pages/ContactMe.html" class="nav__link">GET IN TOUCH</a></li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Navbar -->
-  <nav>
-      <a class="logo" href="#">
-        <img src="logo.png" alt="logo" width="120px" height="50px" media="(max-width: 800px)">
-      </a>
-      <ul class="flex-container">
-        <li><a class="active" href="#task">Task</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#submission">Submission</a></li>
-        <li><a href="#grading">Grading</a></li>
-        <li><a href="#deadline">Deadline</a></li>
-        <li><a href="#">SignIn</a></li>
-      </ul>
-  </nav>
+    <main class="main">
+        <section class="home section" id="home">
+ 
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/adelya-dauletkyzy-1b84771b5/" target="_blank" class="home__social-icon"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://www.instagram.com/adelyadl/" target="_blank" class="home__social-icon"><i class="uil uil-instagram"></i></a>
+                        <a href="https://github.com/AdelyaDauletkyzy" target="_blank" class="home__social-icon"><i class="uil uil-github-alt"></i></a>
+                    </div>
+                    <div class="home__img">
+                        <img src="images/DSC_1424.jpg" alt="" class="home__img">
 
-  <!-- Main Content -->
-  <section class="main_content">
-    <h1 id="main-heading" class="topic">
-      Lab 4 - Designing with CSS 
-    </h1>
-    <hr>
-    <article id="task">
-      <h2 >Task</h2>
-      <p>
-        <img src="nu.jpeg" alt=""  width ="50%" height = "auto">
-        As you have alredy learned in the last lecture, 
-        CSS is about the presentation of the documents
-        like HTML or XML.
-        You need to apply
-        CSS styling rules to make this template HTML file look
-        beautiful and interesting.  
-      </p>
-      <p>
-        There are no 
-        limits to what techniques you use and how you 
-        ultimately solve this task. 
-        However, there are some minimal requirements
-        which are explained in the next section below.
-        <a href="#requirements">Next...</a>
-      </p>
-    </article>
-    <article id="requirements">
-      <h2 >Requirements</h2>
-      <p>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Adelya Dauletkyzy
+                        </h1>
+                        <h3 class="home__subtitle">
+                            Political Science and International Relations Senior Student
+                        </h3>
+                        <p class="home__description">
+                            I am an undergraduate senior student at Nazarbayev University, Kazakhstan, and I am interested in
+                            Finance and Management Consulting.
+                        </p>
+                        <a href="pages/ContactMe.html" class="button button--flex">
+                            Get in touch <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">
+                About Me
+            </h2>
+            <span class="section__subtitle">Intro</span>
+            <div class="about__container container grid">
+                <img src="images/me.jpg" alt="" class="about__img">
+                <div class="about__data">
+                    <p class="about__description"> I am a upcoming graduate of Nazarbayev University. 
+                        I have an experience in competitive debating, case championship, think-tanks and journalism. 
+                        I am excited to soon start my career as a Finance Intern at Efes Kazakhstan in Almaty. 
+                        </p>
+
         
-        The main requirement for this task is to 
-        style this HTML document without any 
-        changes (including adding new and deleting the existing elements) to itself except for these cases: 
-        <ul>
-          <li>
-            You can add <strong>id</strong>
-            and <strong>class</strong> 
-            attributes to the ncessary elements. 
-            </li>
-            <li>
-            You can replace the 
-            images in the defined elements within this document with your
-            own ones. 
-            </li><li>
-            Notice that there is a place for a 
-            large banner on the top of the page,
-            you <strong>must</strong> place an image there only using CSS.
-            </li>
-            <li>
-              You <strong>must</strong> write your names in the specified fields below.
-            </li>
-            <li>You can change the location
-              of in the map below or replace it with the image.
-            </li>
-        </ul>
-      </p>
-      <p>
-        In your stylesheet you <strong>must</strong>
-         use these selectors:
-        <ul>
-          <li>Element selectors;</li>
-          <li>Class selectors;</li>
-          <li>Attribute selectors;</li>
-          <li>ID selectors.</li>
-          <li>Pseudo-class selectors.</li>
-        </ul>
-      </p>
-      <p>
-        Also, you <strong>must</strong> 
-        use the necessary CSS properties
-        and demonstrate the following changes
-        of the elements:
-        <ul>
-          <li>font and background colors;</li>
-          <li>font family and size;</li>
-          <li>margin, padding and borders;</li>
-          <li>image sizes (width and height);</li>
-          <li>text alignment (horizontal and vertical);</li>
-        </ul>
-        Additionally, a special focus <strong>must</strong> 
-        be done to the menu links.        
-        They need to change their status appropriately 
-        (active, hover, visited)
-        as well as be placed in a natural way,
-        i.e. horizontally or vertically. 
-        <a href="#submission">Next...</a>
-      </p>
-    </article>
-    <article id="submission">
-      <h2>Submission</h2>
-      <p>
-       As usual, you <strong>must</strong> submit 
-       your work via Github. All the files and images need to go to 
-       your <strong> <i>username.github.io</i> </strong>repository. 
-       Also, this page must be available 
-       through this domain name.
-      </p>
-      <h3>Info</h3>
-      <p>
-         Insert an image of yourself here.
-         <img src="Adelya_photo.jpg" alt="" width ="50%" height = "50%">
 
-        <ul>
-          <li>Adelya Dauletkyzy </li>
-        </ul>
-      </p>
-    </article>
-    <article id="grading">
-      <h2>Grading</h2>
-      For this assignment you will get 
-      <strong>70 points</strong>  in total.
-      The final score is the sum of the points 
-      for each of the criteria below.
-      <table>
-        <tr>
-          <th>Criteria</th>
-          <th>Points</th>
-        </tr>
-        <tr>
-          <td>CSS file is linked to the document</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Banner image is present</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Menu is styles appropriately</td>
-          <td>5 pts</td>
-        </tr>
+                       <div class="random__container container">
+                        <h3 class="random__title">
+                            Random facts about me
+                        </h3>
+                    <p class="random__description"> 
+                        <ul>
+                            <li value="1">1. I love coffee.</li>
+                            <li>2. I am addicted to chamomile tea.</li>
+                            <li>3. I peel off the skin of my thumb when I’m nervous, or even when I’m not.</li>
+                            <li>4. I love running, strength training.</li>
+                            <li>5. I love watching and playing tennis.</li>
+                            <li>6. I am very bad at chess.</li>
+                            <li>7. My lifestyle in music genre: hip-hop, rock. I pay attention to the melody, to the sound, to the beats (i don't really remember the words).</li>
+                            <li>8. DON’T BE CLICHÉ PLEASE</li>
+                            <li>9. Not a fan of museums. I prefer to experience, not observe.</li>
+                            <li value="10">10. I am a massive nerd. I have a telegram channel dedicated for sharing nerdy stuff. Here’s the <a href="https://t.me/+jw0b3rylxeFiMjU6">link</a>.</li>
+                            <li>11. I LOVE FASHION. I LOVE THRIFT STORES.</li>
+                            <li>12. I am like many others still figuring out my identity, but one of the things I discovered is that I’m a visionary – I like trying out new stuff, bold stuff, and hate to do something so cliche, so overused even if it’s easy.</li>
+                            <li>13. I love working. Sue me.</li>
+                        </ul>
+                        <style>
+                        a {
+                            color: #EED6D3;
+                        }
+                        </style>
+                    </p>
+                    </div>
+                        <div class="about__buttons">
+                            <a download="" href="resources/AdelyaDauletkyzy_CV.pdf" class="button button--flex" style="margin-right: 10px;">
+                                Download My CV<i class="uil uil-folder-download button__icon"></i>
+                            </a>
+                            
+                            <a download="" href="resources/TRANSCRIPT.pdf" class="button button--flex" style="margin-left: 10px;">
+                                Download My Transcript<i class="uil uil-folder-download button__icon"></i>
+                            </a>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         
-        <tr>
-          <td>Photo is present </td>
-          <td>5 pts</td>
-        </tr>
-         <tr>
-          <td>HTML file is unchanged</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Required selectors are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Required CSS properties are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website is available online</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website looks nice and not broken</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Extra cool stuff is used</td>
-          <td>5 pts</td>
-        </tr>
-        </tr>
-      </table>
-    </article>
-  </section>
+    </main>
 
-  <!-- Aside Information -->
-  <aside>
-    <h3>Important</h3>
-    <section class="aside_content">
-      <article id="deadline">
-        <h4>Deadlines:</h4>
-        <ul>
-          <li>Soft deadline: Jan. 31, 2023, 23:59</li>
-          <li>Hard deadline: Feb. 2, 2023, 23:59</li>
-        </ul>
-        <p>
-        <a href="#">More...</a>
-      </article>
-      </section>
-     
-        <h3>Some Dummy Content</h3>
-       <section>
-        <article>
-        <h4>Article 1</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 2</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 3</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-    </section>
-  </aside>
+    
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="contacts">
-      <div >
-        <h5>Contacts</h5>
-        <p>
-          Nazarbayev University <br>
-          53 Kabanbay Batyr ave. <br>
-          Block 7, Room 7.422 <br>
-          Ph.: +7-7172-123-4567 <br>
-          <a href="mailto:info@naturallyinspired.com" class="email">
-            info@naturallyinspired.com
-          </a>
-        </p>
-      </div>
-      <div class="map">
-          <iframe src="https://maps.google.com/maps?q=Nazarbayev%20university,%20Nur-Sultan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
-      </div>
-    </div>
-    <div class="categories">
-      <h5>Top 10 Categories</h5>
-      <ul>
-        <li><a href="#">Category 1</a></li>
-        <li><a href="#">Category 2</a></li>
-        <li><a href="#">Category 3</a></li>
-        <li><a href="#">Category 4</a></li>
-        <li><a href="#">Category 5</a></li>
-        <li><a href="#">Category 6</a></li>
-        <li><a href="#">Category 7</a></li>
-        <li><a href="#">Category 8</a></li>
-        <li><a href="#">Category 9</a></li>
-        <li><a href="#">Category 10</a></li>
-      </ul>
-    </div>
-    <div class="quick_links">
-      <h5>Quick Links</h5>
-      <ul>
-        <li><a href="#">Item1</a></li>
-        <li><a href="#">Item2</a></li>
-        <li><a href="#">Item3</a></li>
-        <li><a href="#">Item4</a></li>
-        <li><a href="#">Item5</a></li>
-        <li><a href="#">Item6</a></li>
-      </ul>
-    </div>
-  </footer>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Adelya Dauletkyzy</h1>
+                    <span class="footer__subtitle">Senior PSIR student</span>
+                    <br>
+                    <span class="footer__subtitle">Nazarbayev University</span>
+                    <br>
+                    <span class="footer__subtitle">Kabanbay Batyr Av. 53, Astana, Kazakhstan</span>
+                    <br>
+                    <span class="footer__subtitle">adelya.dauletkyzy@nu.edu.kz</span>
+                </div>
+    
+                <div class="footer__socials">
+                    <span class="footer__text">For a quicker reply: @adelyadlkz</span>
+                    
+                        <i class="uil uil-telegram-alt"></i>                    
+                 
+                    <br>
+                    <br>
+                    <span class="footer__text">Follow: </span>
+                    <br>
+                    <span class="footer__text"> @adelyadl</span>
+                    <a href="https://www.instagram.com/adelyadl/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <br>
+                    <span class="footer__text"> Adelya Dauletkyzy</span>
+                    <a href="https://www.linkedin.com/in/adelya-dauletkyzy-1b84771b5/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <p class="footer__copy">Adelya Dauletkyzy 2023</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
+
+  
